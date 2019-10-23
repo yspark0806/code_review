@@ -1,34 +1,40 @@
 #include "priority_queue.h"
 
+
 template <>
-templatePriorityQueue<int>::templatePriorityQueue(){
+TemplatePriorityQueue<int>::TemplatePriorityQueue(){
 }
 
 template <>
-templatePriorityQueue<int>::~templatePriorityQueue(){
+TemplatePriorityQueue<int>::~TemplatePriorityQueue(){
 }
 
+// checks whether the underlying container is empty
 template <>
-bool templatePriorityQueue<int>::empty() const{
+bool TemplatePriorityQueue<int>::empty() const{
         return storage.empty();
 }
 
+// returns the number of elements
 template <>
-int templatePriorityQueue<int>::size() {
+int TemplatePriorityQueue<int>::size() {
         return storage.size();
 }
 
+// accesses the top element
 template <>
-const int& templatePriorityQueue<int>::top() const{
+const int& TemplatePriorityQueue<int>::top() const{
         return storage.top();
 }
 
+// removes the top element
 template <>
-void templatePriorityQueue<int>::pop(){
+void TemplatePriorityQueue<int>::pop(){
         storage.pop();
 }
 
+// inserts element and sorts the underlying container
 template <>
-void templatePriorityQueue<int>::push(const int& val){
+void TemplatePriorityQueue<int>::push(const int& val){
         storage.push(val);
 }

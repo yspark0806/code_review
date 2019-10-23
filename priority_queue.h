@@ -1,5 +1,5 @@
-
-Header file에서는 multiple include를 방지하기위해 #define guard를 사용하도록 하시면 좋을 거 같습니다.
+#define PRIORITY_QUEUE_H_
+#define PRIORITY_QUEUE_H_
 
 #include <queue>
 
@@ -25,3 +25,6 @@ class TemplatePriorityQueue {
 		void Push(const T&);
 		void Pop();	
 };
+
+
+#endif  // PRIORITY_QUEUE_H_
